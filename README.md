@@ -22,3 +22,10 @@ We have used Detectron2 library by Facebook AI Research for object detection and
 * The Detectron2 uses a predefined instance segmentation architecture to train on the given annotated image dataset. 
 * The predictor is then able to identify masks and delineate distinct objects of interest depicting neuronal cell types commonly used in the study of neurological disorders.
 
+## Model Architecture
+![image](https://user-images.githubusercontent.com/78380617/152316984-9ac158e8-4539-4730-9770-e590337c3e1a.png)
+
+* The model utilizes a backbone network which is a predefined architecture from the Detectron2 Model zoo (in our case it is Resnet-50). 
+* The model is trained using the COCO pre-trained weights. 
+* The model then predicts by extracting features from the images, followed by the Region Proposal Network (RPN). The RPN then proposes the region boundaries and ROI heads are used for creating mask heads in the image output.
+
