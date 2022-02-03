@@ -17,8 +17,8 @@
 
 ## Modelling technique
 We have used Detectron2 library by Facebook AI Research for object detection and segmentation.
-** The Detectron2 model used, is based on the concept of maskR-CNN benchmark. 
-** To input into the model, The images are augmented by changing the brightness, random flipping etc. 
-** The Detectron2 uses a predefined instance segmentation architecture to train on the given annotated image dataset. 
-** The predictor is then able to identify masks and delineate distinct objects of interest depicting neuronal cell types commonly used in the study of neurological disorders.
+* The Detectron2 model used, is based on the concept of maskR-CNN benchmark. 
+* To input into the model, The images are augmented by changing the brightness, random flipping etc. 
+* The Detectron2 uses a predefined instance segmentation architecture to train on the given annotated image dataset. 
+* The predictor is then able to identify masks and delineate distinct objects of interest depicting neuronal cell types commonly used in the study of neurological disorders.
 
